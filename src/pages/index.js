@@ -1,6 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
-
+import { Link, graphql } from "gatsby"
+import Img from 'gatsby-image'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Particles from 'react-particles-js';
@@ -118,7 +118,7 @@ const options = {
   "retina_detect": true
 }
 
-const IndexPage = () => (
+const IndexPage = (props) => (
   <Layout>
     <SEO title="Home" />
     <div>
@@ -147,17 +147,66 @@ const IndexPage = () => (
 
     <section className="section my-works">
       <div className="my-works__container">
+        <div className="about-me-card">
+          <p>Card here</p>
+        </div>
         <h1>My Works</h1>
         <div className="my-works__item-container">
-          <div className="my-works__item my-works__item--gatsby">
-            <h2>Gatsby Detailing</h2>
+
+          <div className="card">
+            <div className="face face--2">
+              <div className="content">
+                <p>djbshjcbdshjcsd cjbndskjv s dvhs divhj
+                jsndkjcbsbdncbsdh cjhds cb dhs ck sdkc
+                shjd ckjh nsdchj nhjus dcjdscj d cdkjs</p>
+                <a href="#">Github</a>
+                <a href="#">Live Demo</a>
+              </div>
+            </div>
+            <div className="face face--1">
+              <div className="content">
+                <Img  alt="Gatsby"
+                      fluid={props.data.gatsby_detailing.childImageSharp.fluid} />
+              </div>
+            </div>
           </div>
-          <div className="my-works__item my-works__item--mars">
-            <h2>Discover Mars</h2>
+
+          <div className="card">
+            <div className="face face--2">
+              <div className="content">
+                <p>djbshjcbdshjcsd cjbndskjv s dvhs divhj
+                jsndkjcbsbdncbsdh cjhds cb dhs ck sdkc
+                shjd ckjh nsdchj nhjus dcjdscj d cdkjs</p>
+                <a href="#">Github</a>
+                <a href="#">Live Demo</a>
+              </div>
+            </div>
+            <div className="face face--1">
+              <div className="content">
+                <Img  alt="Gatsby"
+                      fluid={props.data.discover_mars.childImageSharp.fluid} />
+              </div>
+            </div>
           </div>
-          <div className="my-works__item my-works__item--nexfit">
-            <h2>NexFit</h2>
+
+          <div className="card">
+            <div className="face face--2">
+              <div className="content">
+                <p>djbshjcbdshjcsd cjbndskjv s dvhs divhj
+                jsndkjcbsbdncbsdh cjhds cb dhs ck sdkc
+                shjd ckjh nsdchj nhjus dcjdscj d cdkjs</p>
+                <a href="#">Github</a>
+                <a href="#">Live Demo</a>
+              </div>
+            </div>
+            <div className="face face--1">
+              <div className="content">
+                <Img  alt="Gatsby"
+                      fluid={props.data.nexfit.childImageSharp.fluid} />
+              </div>
+            </div>
           </div>
+
         </div>
       </div>
     </section>
@@ -212,3 +261,27 @@ const IndexPage = () => (
 )
 
 export default IndexPage
+
+export const fluidImage = graphql`
+fragment fluidImage on File {
+  childImageSharp {
+    fluid(maxWidth: 1000) {
+      ...GatsbyImageSharpFluid
+    }
+  }
+}
+`;
+
+export const pageQuery = graphql`
+  query {
+    gatsby_detailing: file(relativePath: { eq: "gatsby.jpg" }) {
+      ...fluidImage
+    }
+    discover_mars: file(relativePath: { eq: "discover_mars.jpg" }) {
+      ...fluidImage
+    }
+    nexfit: file(relativePath: { eq: "nexfit.jpg" }) {
+      ...fluidImage
+    }
+  }
+`
