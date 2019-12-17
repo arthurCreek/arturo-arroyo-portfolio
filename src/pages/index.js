@@ -121,19 +121,6 @@ const options = {
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-
-    {/*
-    <div className="hero">
-      <div className="hero__text-box" id="hero__main-text">
-        <h1 className="hero-primary">
-          <span className="hero-primary--main">Gatsby Detailing</span>
-          <span className="hero-primary--sub">We love your car as much as you do</span>
-        </h1>
-
-        <a href="#section-popular" className="btn btn--white btn--animated">Discover Our Services</a>
-      </div>
-    </div>
-    */}
     <div>
       <div className="header__text">
         <div className="header__text--container">
@@ -157,7 +144,70 @@ const IndexPage = () => (
       </div>
       <Particles params={options} className="header__particles"/>
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
+
+    <section className="section my-works">
+      <div className="my-works__container">
+        <h1>My Works</h1>
+        <div className="my-works__item-container">
+          <div className="my-works__item my-works__item--gatsby">
+            <h2>Gatsby Detailing</h2>
+          </div>
+          <div className="my-works__item my-works__item--mars">
+            <h2>Discover Mars</h2>
+          </div>
+          <div className="my-works__item my-works__item--nexfit">
+            <h2>NexFit</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section className="section my-skills">
+      <div className="my-skills__container">
+        <h1>My Skills</h1>
+        <div className="my-skills__item-container">
+          <div className="my-skills__card">
+            <h2>Skill 1</h2>
+            <p>Skills stuff here</p>
+          </div>
+          <div className="my-skills__card">
+            <h2>Skill 1</h2>
+            <p>Skills stuff here</p>
+          </div>
+          <div className="my-skills__card">
+            <h2>Skill 1</h2>
+            <p>Skills stuff here</p>
+          </div>
+          <div className="my-skills__card">
+            <h2>Skill 1</h2>
+            <p>Skills stuff here</p>
+          </div>
+          <div className="my-skills__card">
+            <h2>Skill 1</h2>
+            <p>Skills stuff here</p>
+          </div>
+          <div className="my-skills__card">
+            <h2>Skill 1</h2>
+            <p>Skills stuff here</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section className="section about-me">
+      <div className="about-me__container">
+        <h1>About Me</h1>
+        <p>This is the about me section</p>
+      </div>
+    </section>
+
+    <section className="section contact-me">
+      <div className="contact-me__container">
+        <h1>Contact Me</h1>
+        <p>This is the contact me section</p>
+      </div>
+    </section>
   </Layout>
 )
 

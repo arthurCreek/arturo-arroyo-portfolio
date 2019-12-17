@@ -1,0 +1,36 @@
+.my-works__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 115rem;
+    margin: 10rem auto;
+
+    & > h1 {
+        margin-bottom: 10rem;
+    }
+}
+
+.my-works__item-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5rem;
+}
+
+.my-works__item {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 25rem;
+
+    &--gatsby {
+        background-image: url(.././images/gatsby.jpg);
+    }
+
+    &--mars {
+        background-image: url(.././images/discover_mars.jpg);
+    }
+
+    &--nexfit {
+        background-image: url(.././images/nexfit.jpg);
+    }
+}
