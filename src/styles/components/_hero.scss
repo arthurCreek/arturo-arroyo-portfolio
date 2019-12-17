@@ -1,0 +1,83 @@
+.hero, 
+.hero-sub, 
+.hero-sub--contact {
+    height: 100vh;
+    // background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(.././images/gtr.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .5)),url(.././images/hero.jpg);
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    background-attachment: fixed;
+
+    @include respond(phone){
+        background-size: auto;
+        background-position: inherit;
+    }
+
+    &::before {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    &__logo-box {
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+    }
+
+    &__logo {
+        height: 3.5rem;
+    }
+    
+    &__text-box {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+        text-align: center;
+
+        @include respond(phone){
+            top: 65%
+        }
+
+    }
+
+}
+
+.hero-sub {
+    height: 70vh;
+
+    // @include respond(tab-land){
+    //     height: 50vh;
+    // }
+
+    // @include respond(tab-port){
+    //     height: 40vh;
+    // }
+    // @include respond(phone){
+    //     background-position: top;
+    // }
+}
+
+.hero-sub--contact {
+    height: 60vh;
+
+    // @include respond(tab-land){
+    //     height: 45vh;
+    // }
+
+    // @include respond(tab-port){
+    //     height: 40vh;
+    // }
+}
+
+#hero__contact-text-box {
+    top: 70%;
+}
+
+#hero__main-text {
+    
+    // @include respond(phone){
+    //     top: 50%;
+    // }
+}
