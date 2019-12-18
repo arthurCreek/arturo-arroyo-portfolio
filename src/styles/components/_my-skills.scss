@@ -1,13 +1,27 @@
 .my-skills__container {
     display: flex;
     flex-direction: column;
-    // text-align: center;
+    position: relative;
     max-width: 130rem;
-    margin: 10rem auto;
+    margin: 15rem auto;
 
     & > h1 {
-        margin: 0 auto 10rem auto;
+        margin: 0 auto 15rem auto;
+        font-size: 3em;
+        font-weight: bold;
+        margin-top: 1rem;
     }
+}
+
+.skills {
+    position: absolute;
+    font-size: 10em;
+    color: black;
+    opacity: .1;
+    font-weight: bolder;
+    letter-spacing: 6px;
+    top: -33px;
+    left: 20%;
 }
 
 .my-skills__item-container {
@@ -76,6 +90,7 @@
         box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
         transition: box-shadow 0.3s ease;
     }
+
 }
 
 .skill-title {
@@ -86,4 +101,24 @@
     width: 2.5rem;
     padding: 1rem;
     
+}
+
+.javascript-content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+
+}
+
+.javascript-content {
+    & > p {
+        margin: 1rem 2rem;
+        font-size: 1.5em;
+        line-height: 20px;
+
+        &:first-child {
+            margin-top: 2rem;
+        }
+    }
 }

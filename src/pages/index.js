@@ -147,10 +147,11 @@ const IndexPage = (props) => (
 
     <section className="section my-works">
       <div className="my-works__container">
+
         <p className="portfolio">PORTFOLIO</p>
         <h1>MY WORKS</h1>
-        <div className="my-works__item-container">
 
+        <div className="my-works__item-container">
           <div className="card">
             <div className="face face--2">
               <div className="content">
@@ -211,7 +212,8 @@ const IndexPage = (props) => (
 
     <section className="section my-skills">
       <div className="my-skills__container">
-        <h1>My Skills</h1>
+        <p className="skills">WHAT I CAN DO</p>
+        <h1>MY SKILLS</h1>
 
         <div className="my-skills__item-container">
           <div className="my-skills__card">
@@ -229,7 +231,7 @@ const IndexPage = (props) => (
             <p><span className="skill-title">CSS Frameworks: </span>Bootstrap, MaterialUI, etc.</p>
           </div>
 
-          <div className="my-skills__card">
+          <div className="my-skills__card my-skills__card--javascript">
             <div className="my-skills__card-icon">
               <Img  alt="Code Icon"
                     className="skill_icon_img"
@@ -238,8 +240,24 @@ const IndexPage = (props) => (
             <div className="my-skills__card-title">
               <h2>Javascript</h2>
             </div>
-            <p><span className="skill-title">Versions: </span>ES5, ES6, ES7, ES8</p>
-            <p><span className="skill-title">Fundamentals: </span>Control Flow, Error Handling, Data Models, Asynchronity, DOM Manipulation, Functional Programming, OOP, MVC/MVVM etc...</p>
+
+            <div className="javascript-content-container">
+              <div className="javascript-content">
+                <p>Control Flow</p> 
+                <p>Error Handling</p>
+                <p>Data Models</p>
+                <p>Asynchronity</p>
+                <p>DOM Manipulation</p>
+              </div>
+              
+              <div className="javascript-content">
+                <p>Functional Programming</p>
+                <p>OOP</p>
+                <p>MVC/MVVM...</p>
+                <p>And many more!</p>
+              </div>
+            </div>
+
           </div>
 
           <div className="my-skills__card">
@@ -264,10 +282,11 @@ const IndexPage = (props) => (
                     fluid={props.data.database_icon.childImageSharp.fluid} />
             </div>
             <div className="my-skills__card-title">
-              <h2>State Management</h2>
+              <h2>Back End / State Management</h2>
             </div>
-            <p><span className="skill-title">React: </span>Context API, React Hooks</p>
-            <p><span className="skill-title">Redux: </span>React Redux</p>
+            <p><span className="skill-title">JS Backend: </span>Node.js, Express, Web APIs</p>
+            <p><span className="skill-title">Database: </span>MySQL, MongoDB, Firebase</p>
+            <p><span className="skill-title">React: </span>Context API, React Hooks, Redux</p>
             <p><span className="skill-title">Vanilla: </span>Props, localStorage</p>
           </div>
 
@@ -288,19 +307,6 @@ const IndexPage = (props) => (
             <div className="my-skills__card-icon">
               <Img  alt="Code Icon"
                     className="skill_icon_img"
-                    fluid={props.data.database_icon.childImageSharp.fluid} />
-            </div>
-            <div className="my-skills__card-title">
-              <h2>Back End</h2>
-            </div>
-            <p><span className="skill-title">JS Backend: </span>Node.js, Express, Web APIs</p>
-            <p><span className="skill-title">Database: </span>MySQL, MongoDB, Firebase</p>
-          </div>
-
-          <div className="my-skills__card">
-            <div className="my-skills__card-icon">
-              <Img  alt="Code Icon"
-                    className="skill_icon_img"
                     fluid={props.data.optimize_icon.childImageSharp.fluid} />
             </div>
             <div className="my-skills__card-title">
@@ -308,20 +314,6 @@ const IndexPage = (props) => (
             </div>
             <p><span className="skill-title">Images: </span>Image Optimization</p>
             <p><span className="skill-title">Checklist: </span>Cross-Browser/Platform Testing, Accessibility, Mobile Web Performance, Auditing, many more</p>
-          </div>
-
-          <div className="my-skills__card">
-            <div className="my-skills__card-icon">
-              <Img  alt="Code Icon"
-                    className="skill_icon_img"
-                    fluid={props.data.code_icon.childImageSharp.fluid} />
-            </div>
-            <div className="my-skills__card-title">
-              <h2>Additional</h2>
-            </div>
-            <p><span className="skill-title">Extras: </span>If you are interested, please feel free to check out my github 
-            for more projects, including previous Android Development projects using Java and Kotlin.</p>
-
           </div>
 
         </div>
