@@ -157,8 +157,8 @@ const IndexPage = (props) => (
               <div className="content">
                 <p>Detail your car by the best in the business.</p>
                 <p>Made With: GatsbyJS, HTML5, CSS3</p>
-                <a href="#">Github</a>
-                <a href="#">Live Demo</a>
+                <a href="https://github.com/arthurCreek/gatsby-detailing">Github</a>
+                <a href="https://mystifying-goldwasser-a43885.netlify.com/">Live Demo</a>
               </div>
             </div>
             <div className="face face--1">
@@ -174,8 +174,8 @@ const IndexPage = (props) => (
               <div className="content">
                 <p>Search Mars rover pictures by date through NASA's API.</p>
                 <p>Made With: React, HTML5, CSS3, Javascript, NASA API, Context API, React Hooks</p>
-                <a href="#">Github</a>
-                <a href="#">Live Demo</a>
+                <a href="https://github.com/arthurCreek/nasaapi">Github</a>
+                <a href="https://wizardly-yalow-390819.netlify.com/">Live Demo</a>
               </div>
             </div>
             <div className="face face--1">
@@ -191,8 +191,8 @@ const IndexPage = (props) => (
               <div className="content">
                 <p>Top notch insulated outerwear ecommerce business.</p>
                 <p>Made With: NextJS, Node, ContextAPI, React Hooks</p>
-                <a href="#">Github</a>
-                <a href="#">Live Demo</a>
+                <a href="https://github.com/arthurCreek/nexfit">Github</a>
+                <a href="https://nexfit.herokuapp.com/">Live Demo</a>
               </div>
             </div>
             <div className="face face--1">
