@@ -208,12 +208,20 @@ const IndexPage = (props) => (
       </div>
     </section>
 
+
+
+
     <section className="section my-skills">
       <div className="my-skills__container">
         <h1>My Skills</h1>
 
         <div className="my-skills__item-container">
           <div className="my-skills__card">
+            <div className="my-skills__card-icon">
+              <Img  alt="Code Icon"
+                    className="skill_icon_img"
+                    fluid={props.data.code_icon.childImageSharp.fluid} />
+            </div>
             <div className="my-skills__card-title">
               <h2>The Basics</h2>
             </div>
@@ -224,14 +232,25 @@ const IndexPage = (props) => (
           </div>
 
           <div className="my-skills__card">
+            <div className="my-skills__card-icon">
+              <Img  alt="Code Icon"
+                    className="skill_icon_img"
+                    fluid={props.data.js_icon.childImageSharp.fluid} />
+            </div>
             <div className="my-skills__card-title">
               <h2>Javascript</h2>
             </div>
-            <p>ES5, ES6, ES7, ES8</p>
+            <p><span className="skill-title">Versions: </span>ES5, ES6, ES7, ES8</p>
             <p><span className="skill-title">Fundamentals: </span>Control Flow, Error Handling, Data Models, Asynchronity, DOM Manipulation, Functional Programming, OOP, MVC/MVVM etc...</p>
           </div>
 
           <div className="my-skills__card">
+            <div className="my-skills__card-icon">
+              <Img  alt="Code Icon"
+                    className="skill_icon_img"
+                    fluid={props.data.react_icon.childImageSharp.fluid} />
+            </div>
+
             <div className="my-skills__card-title">
               <h2>Front End Frameworks</h2>
             </div>
@@ -241,46 +260,69 @@ const IndexPage = (props) => (
           </div>
 
           <div className="my-skills__card">
+            <div className="my-skills__card-icon">
+              <Img  alt="Code Icon"
+                    className="skill_icon_img"
+                    fluid={props.data.database_icon.childImageSharp.fluid} />
+            </div>
             <div className="my-skills__card-title">
               <h2>State Management</h2>
             </div>
-            <p>Context API, React Hooks</p>
-            <p>React Redux</p>
-            <p>Props, localStorage</p>
+            <p><span className="skill-title">React: </span>Context API, React Hooks</p>
+            <p><span className="skill-title">Redux: </span>React Redux</p>
+            <p><span className="skill-title">Vanilla: </span>Props, localStorage</p>
           </div>
 
           <div className="my-skills__card">
+            <div className="my-skills__card-icon">
+              <Img  alt="Code Icon"
+                    className="skill_icon_img"
+                    fluid={props.data.tools_icon.childImageSharp.fluid} />
+            </div>
             <div className="my-skills__card-title">
               <h2>Build Tools</h2>
             </div>
-            <p>Node Package Manager (NPM)</p>
-            <p>Yarn</p>
-            <p>Webpack</p>
-            <p>Babel</p>
+            <p><span className="skill-title">Package Managers: </span>NPM, Yarn</p>
+            <p><span className="skill-title">Tools: </span>Webpack, Babel, dotenv, live-server</p>
           </div>
 
           <div className="my-skills__card">
+            <div className="my-skills__card-icon">
+              <Img  alt="Code Icon"
+                    className="skill_icon_img"
+                    fluid={props.data.database_icon.childImageSharp.fluid} />
+            </div>
             <div className="my-skills__card-title">
               <h2>Back End</h2>
             </div>
-            <p>Node.js, Express, Web APIs</p>
-            <p>MySQL, MongoDB, Firebase</p>
+            <p><span className="skill-title">JS Backend: </span>Node.js, Express, Web APIs</p>
+            <p><span className="skill-title">Database: </span>MySQL, MongoDB, Firebase</p>
           </div>
 
           <div className="my-skills__card">
+            <div className="my-skills__card-icon">
+              <Img  alt="Code Icon"
+                    className="skill_icon_img"
+                    fluid={props.data.optimize_icon.childImageSharp.fluid} />
+            </div>
             <div className="my-skills__card-title">
               <h2>Optimization</h2>
             </div>
-            <p>Image Optimization</p>
-            <p>Cross-Browser/Platform Testing, Accessibility, Mobile Web Performance</p>
+            <p><span className="skill-title">Images: </span>Image Optimization</p>
+            <p><span className="skill-title">Checklist: </span>Cross-Browser/Platform Testing, Accessibility, Mobile Web Performance, Auditing, many more</p>
           </div>
 
           <div className="my-skills__card">
+            <div className="my-skills__card-icon">
+              <Img  alt="Code Icon"
+                    className="skill_icon_img"
+                    fluid={props.data.code_icon.childImageSharp.fluid} />
+            </div>
             <div className="my-skills__card-title">
               <h2>Additional</h2>
             </div>
-            <p>If you are interested and have time, please feel free to check out my github 
-            to review my code which may include skills not on here, as well as previous Android Development Projects</p>
+            <p><span className="skill-title">Extras: </span>If you are interested, please feel free to check out my github 
+            for more projects, including previous Android Development projects using Java and Kotlin.</p>
 
           </div>
 
@@ -328,5 +370,23 @@ export const pageQuery = graphql`
     nexfit: file(relativePath: { eq: "nexfit.jpg" }) {
       ...fluidImage
     }
+    code_icon: file(relativePath: { eq: "code_icon.png" }) {
+      ...fluidImage
+    } 
+    js_icon: file(relativePath: { eq: "js_icon.png" }) {
+      ...fluidImage
+    } 
+    react_icon: file(relativePath: { eq: "react_icon.png" }) {
+      ...fluidImage
+    } 
+    database_icon: file(relativePath: { eq: "database_icon.png" }) {
+      ...fluidImage
+    } 
+    tools_icon: file(relativePath: { eq: "tools_icon.png" }) {
+      ...fluidImage
+    } 
+    optimize_icon: file(relativePath: { eq: "optimize_icon.png" }) {
+      ...fluidImage
+    } 
   }
 `
