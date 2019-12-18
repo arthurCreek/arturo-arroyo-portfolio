@@ -29,3 +29,28 @@
         margin: 0 auto 15rem auto;
     }
 }
+
+.about-me__content-container {
+    max-width: 1150px;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 15rem;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+
+    &--img {
+        width: 30%;
+    }
+
+    &--text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+
+        & > p {
+            margin: 0 5rem;
+            font-size: 1.5em;
+            line-height: 25px;
+        }
+    }
+}

@@ -330,10 +330,19 @@ const IndexPage = (props) => (
           <h1>ABOUT ME</h1>
         </div>
 
-        <div>
-          <p>I've always sought out opportunities and challenges that are meaningful to me.  As a web developer, I enjoy every aspect of every project from 
-          the idea to the finished product.  I love to make things, together with my mission-driven work ethic, I'm excited to make a meaningful impact in 
-          the world and at a great company.</p>
+        <div className="about-me__content-container">
+
+          <div className="about-me__content-container--img">
+              <Img  alt="About me image"
+                    fluid={props.data.about_me.childImageSharp.fluid} />
+          </div>
+
+          <div className="about-me__content-container--text">
+            <p>I've always sought out opportunities and challenges that are meaningful to me.  As a web developer, I enjoy every aspect of every project from 
+            the idea to the finished product.  I love to make things, together with my mission-driven work ethic, I'm excited to make a meaningful impact in 
+            the world and at a great company.</p>
+          </div>
+
         </div>
 
       </div>
@@ -395,6 +404,9 @@ export const pageQuery = graphql`
       ...fluidImage
     } 
     optimize_icon: file(relativePath: { eq: "optimize_icon.png" }) {
+      ...fluidImage
+    } 
+    about_me: file(relativePath: { eq: "hero.jpg" }) {
       ...fluidImage
     } 
   }
