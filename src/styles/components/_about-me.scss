@@ -9,3 +9,23 @@
         margin-bottom: 10rem;
     }
 }
+.about-me__title {
+    position: relative;
+
+    & > p {
+        position: absolute;
+        font-size: 10em;
+        color: black;
+        opacity: .1;
+        font-weight: bolder;
+        letter-spacing: 6px;
+        top: -45px;
+        left: 27%;
+    }
+
+    & > h1 {
+        font-size: 3em;
+        font-weight: bold;
+        margin: 0 auto 15rem auto;
+    }
+}

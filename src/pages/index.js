@@ -212,6 +212,7 @@ const IndexPage = (props) => (
 
     <section className="section my-skills">
       <div className="my-skills__container">
+
         <p className="skills">WHAT I CAN DO</p>
         <h1>MY SKILLS</h1>
 
@@ -323,15 +324,33 @@ const IndexPage = (props) => (
 
     <section className="section about-me">
       <div className="about-me__container">
-        <h1>About Me</h1>
-        <p>This is the about me section</p>
+
+        <div className="about-me__title">
+          <p>WHO I AM</p>
+          <h1>ABOUT ME</h1>
+        </div>
+
+        <div>
+          <p>I've always sought out opportunities and challenges that are meaningful to me.  As a web developer, I enjoy every aspect of every project from 
+          the idea to the finished product.  I love to make things, together with my mission-driven work ethic, I'm excited to make a meaningful impact in 
+          the world and at a great company.</p>
+        </div>
+
       </div>
     </section>
 
     <section className="section contact-me">
       <div className="contact-me__container">
-        <h1>Contact Me</h1>
-        <p>This is the contact me section</p>
+
+        <div className="contact-me__title">
+          <p>REACH OUT</p>
+          <h1>CONTACT ME</h1>
+        </div>
+
+        <div>
+          <p>This is the contact me section</p>
+        </div>
+
       </div>
     </section>
   </Layout>
