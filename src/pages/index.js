@@ -147,10 +147,8 @@ const IndexPage = (props) => (
 
     <section className="section my-works">
       <div className="my-works__container">
-        <div className="about-me-card">
-          <p>Card here</p>
-        </div>
-        <h1>My Works</h1>
+        <p className="portfolio">PORTFOLIO</p>
+        <h1>MY WORKS</h1>
         <div className="my-works__item-container">
 
           <div className="card">

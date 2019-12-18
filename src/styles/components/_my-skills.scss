@@ -14,6 +14,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 5rem;
+    
+
 }
 .my-skills__card {
     background-color: #f7f7f7;
@@ -21,6 +23,22 @@
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
     position: relative;
     margin-bottom: 5rem;
+    transition: box-shadow 0.3s ease,
+                transform 0.3s ease;
+    border-radius: 5px;
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
+        transition: box-shadow 0.3s ease,
+                    transform 0.3s ease;
+    }
+
+    &:hover .my-skills__card-icon {
+        box-shadow: 0 0px 0px rgba(0, 0, 0, 0.5);
+        transition: box-shadow 0.3s ease;
+    }
+
 
     & > h2 {
         margin: 2rem 0;
@@ -29,8 +47,9 @@
     }
 
     & > p {
-        margin: 1rem 2rem;
+        margin: 2rem 4rem;
         font-size: 1.5em;
+        line-height: 20px;
     }
 
     &-title {
@@ -55,6 +74,7 @@
         justify-content: center;
         align-items: center;
         box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+        transition: box-shadow 0.3s ease;
     }
 }
 
