@@ -17,14 +17,20 @@
         font-weight: bold;
         margin-top: 1rem;
 
+
+
+        @include respond(tab-land) {
+            margin: 0 auto 11rem auto;
+            padding-top: 8rem;
+        }
+
         @include respond(tab-port) {
             margin: 0 auto 10rem auto;
-            padding-top: 9rem;
+            padding-top: 8rem;
         }
 
         @include respond(phone) {
-            margin: 0 auto 8rem auto;
-            padding-top: 8rem;
+            margin: 0 auto 7rem auto;
             font-size: 2em;
         }
     }
@@ -40,18 +46,18 @@
     top: 68px;
     width: 100%;
 
-    @include respond(tab-port) {
-        top: 70px;
+    @include respond(tab-land) {
+        top: 63px;
         font-size: 6em;
     }
 
     @include respond(tab-port) {
         top: 60px;
-        font-size: 3em;
     }
 
     @include respond(phone) {
-        top: 50px;
+        top: 45px;
+        font-size: 3em;
     }
 }
 
