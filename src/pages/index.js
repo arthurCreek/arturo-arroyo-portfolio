@@ -153,6 +153,12 @@ const IndexPage = (props) => (
 
         <div className="my-works__item-container">
           <div className="card">
+            <div className="face face--1">
+              <div className="content">
+                <Img  alt="Gatsby"
+                      fluid={props.data.gatsby_detailing.childImageSharp.fluid} />
+              </div>
+            </div>
             <div className="face face--2">
               <div className="content">
                 <p>Detail your car by the best in the business.</p>
@@ -161,15 +167,18 @@ const IndexPage = (props) => (
                 <a href="https://mystifying-goldwasser-a43885.netlify.com/">Live Demo</a>
               </div>
             </div>
-            <div className="face face--1">
-              <div className="content">
-                <Img  alt="Gatsby"
-                      fluid={props.data.gatsby_detailing.childImageSharp.fluid} />
-              </div>
-            </div>
+
+
+
           </div>
 
           <div className="card">
+            <div className="face face--1">
+              <div className="content">
+                <Img  alt="Nasa"
+                      fluid={props.data.discover_mars.childImageSharp.fluid} />
+              </div>
+            </div>
             <div className="face face--2">
               <div className="content">
                 <p>Search Mars rover pictures by date through NASA's API.</p>
@@ -178,15 +187,16 @@ const IndexPage = (props) => (
                 <a href="https://wizardly-yalow-390819.netlify.com/">Live Demo</a>
               </div>
             </div>
-            <div className="face face--1">
-              <div className="content">
-                <Img  alt="Nasa"
-                      fluid={props.data.discover_mars.childImageSharp.fluid} />
-              </div>
-            </div>
+
           </div>
 
           <div className="card">
+            <div className="face face--1">
+              <div className="content">
+                <Img  alt="Nexfit"
+                      fluid={props.data.nexfit.childImageSharp.fluid} />
+              </div>
+            </div>
             <div className="face face--2">
               <div className="content">
                 <p>Top notch insulated outerwear ecommerce business.</p>
@@ -195,12 +205,7 @@ const IndexPage = (props) => (
                 <a href="https://nexfit.herokuapp.com/">Live Demo</a>
               </div>
             </div>
-            <div className="face face--1">
-              <div className="content">
-                <Img  alt="Nexfit"
-                      fluid={props.data.nexfit.childImageSharp.fluid} />
-              </div>
-            </div>
+
           </div>
 
         </div>
