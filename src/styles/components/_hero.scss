@@ -2,7 +2,6 @@
 .hero-sub, 
 .hero-sub--contact {
     height: 100vh;
-    // background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(.././images/gtr.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),url(.././images/hero.jpg);
     background-size: cover;
     background-position: bottom;
@@ -10,8 +9,7 @@
     background-attachment: fixed;
 
     @include respond(phone){
-        background-size: auto;
-        background-position: inherit;
+        background-position: right;
     }
 
     &::before {
@@ -91,6 +89,10 @@
     position: relative;
     background-attachment: fixed;
 
+    @include respond(phone){
+        background-position: right;
+    }
+
 
     // @include respond(tab-port){
     //     height: 50vh;
@@ -116,19 +118,23 @@
         height: 45vh;
     }
 
+    @include respond(phone){
+        height: 90vh;
+    }
+
 
 }
 
 .header__h1 {
-    font-size: 5rem;
-    letter-spacing: .6em;
+    font-size: 7rem;
+    letter-spacing: .1em;
 
     @include respond(tab-port){
-        font-size: 4em;
+        font-size: 6em;
         text-align: center;
     }
     @include respond(phone){
-        font-size: 2em;
+        font-size: 3em;
     }
 }
 
@@ -137,7 +143,7 @@
     letter-spacing: .14em;
 
     @include respond(tab-port){
-        font-size: 2em;
+        font-size: 2.5em;
         font-weight: 400;
         text-align: center;
     }
