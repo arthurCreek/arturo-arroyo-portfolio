@@ -9,6 +9,26 @@
     &__copyright {
         color: orange;
     }
+
+    &__send {
+        margin-top: 2rem;
+        background-color: white;
+        display: inline-block;
+        text-decoration: none;
+        font-weight: bold;
+        color: #333;
+        padding: 1rem 2rem;
+        border: 3px solid #333;
+        font-size: 1.7em;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+
+        &:hover {
+            background: #333;
+            color: #fff;
+            transition: background-color 0.2s ease;
+        }
+    }
 }
 
 .contact-me__container {

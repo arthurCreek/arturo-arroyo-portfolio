@@ -377,7 +377,7 @@ const IndexPage = (props) => (
               <label><textarea name="message" placeholder="Write A Message" className="contact-me__form-message"></textarea></label>
             </p>
             <p>
-              <button type="submit">Send</button>
+              <button type="submit" className="contact-me__send">Send</button>
             </p>
           </form>
         </div>
