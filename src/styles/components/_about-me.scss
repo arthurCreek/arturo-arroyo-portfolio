@@ -19,22 +19,31 @@
         opacity: .1;
         font-weight: bolder;
         letter-spacing: 6px;
-        top: -45px;
+        top: 58px;
         width: 100%;
 
         @include respond(tab-land) {
             top: 57px;
+        }
+
+        @include respond(phone) {
+            font-size: 5em;
+            top: 50px;
         }
     }
 
     & > h1 {
         font-size: 3em;
         font-weight: bold;
-        margin: 0 auto 15rem auto;
+        margin: 10rem auto 10rem auto;
 
         @include respond(tab-land) {
             margin: 0 auto 10rem auto;
             padding-top: 10rem;
+        }
+
+        @include respond(phone) {
+            margin: 0 auto 5rem auto;
         }
     }
 }
