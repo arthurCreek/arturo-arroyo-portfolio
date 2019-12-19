@@ -5,6 +5,7 @@
     background-position: bottom;
     position: relative;
     background-attachment: fixed;
+    margin: 0 auto;
 
     &__copyright {
         color: orange;
@@ -41,6 +42,10 @@
     & > h1 {
         margin-bottom: 10rem;
     }
+
+    @include respond(phone) {
+        width: 100%;
+    }
 }
 
 .contact-me__title {
@@ -54,7 +59,17 @@
         font-weight: bolder;
         letter-spacing: 6px;
         top: 28px;
-        left: 24%;
+        width: 100%;
+
+        @include respond(tab-port) {
+            top: 31px;
+            font-size: 9em;
+        }
+
+        @include respond(tab-port) {
+            top: 31px;
+            font-size: 4em;
+        }
     }
 
     & > h1 {
@@ -62,6 +77,10 @@
         font-weight: bold;
         margin: 7rem auto 15rem auto;
         color: white;
+
+        @include respond(tab-port) {
+            margin: 7rem auto 7rem auto;
+        }
     }
 }
 
@@ -72,6 +91,17 @@
     padding: 10rem 8rem 6rem 8rem;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
     position: relative;
+
+    @include respond(tab-port) {
+        max-width: 40rem;
+        padding: 10rem 4rem 6rem 4rem;
+    }
+
+    @include respond(phone) {
+        width: 100%;
+        padding: 0;
+        padding-bottom: 5rem;
+    }
 }
 
 .form-input {
@@ -80,12 +110,31 @@
     outline: none;
     border-radius: 5px;
     border-width: 1px;
+
+    @include respond(tab-port) {
+        font-size: 1.7em;
+        margin-bottom: 1rem;
+    }
+
+    @include respond(phone) {
+        margin: 0 1rem 1rem 1rem 1rem;
+    }
 }
 
 .contact-me__name-input-container {
     display: flex;
     width: 60rem;
     justify-content: space-around;
+
+    @include respond(tab-port) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    @include respond(phone) {
+        margin-top: 5rem;
+        margin-left: 12%;
+    }
 }
 
 .contact-me__form-message {
@@ -97,6 +146,13 @@
     width: 55rem;
     height: 20rem;
     margin-top: 2rem;
+
+    @include respond(tab-port) {
+        width: 38rem;
+    }
+    @include respond(phone) {
+        width: 70%;
+    }
 }
 
 .contact-me__card-icon {
