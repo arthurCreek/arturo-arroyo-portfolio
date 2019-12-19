@@ -1,3 +1,12 @@
+.contact-me {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)),url(.././images/laptop_overview.jpg);
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    background-attachment: fixed;
+}
+
 .contact-me__container {
     display: flex;
     flex-direction: column;
@@ -16,17 +25,68 @@
     & > p {
         position: absolute;
         font-size: 10em;
-        color: black;
-        opacity: .1;
+        color: white;
+        opacity: .4;
         font-weight: bolder;
         letter-spacing: 6px;
-        top: -45px;
+        top: 28px;
         left: 24%;
     }
 
     & > h1 {
         font-size: 3em;
         font-weight: bold;
-        margin: 0 auto 15rem auto;
+        margin: 7rem auto 15rem auto;
+        color: white;
     }
+}
+
+.contact-me__form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f7f7f7;
+    padding: 10rem 8rem 6rem 8rem;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.form-input {
+    font-size: 2em;
+    padding: 1rem;
+    outline: none;
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+.contact-me__name-input-container {
+    display: flex;
+    width: 60rem;
+    justify-content: space-around;
+}
+
+.contact-me__form-message {
+    font-size: 2em;
+    padding: 1rem;
+    outline: none;
+    border-radius: 5px;
+    border-width: 1px;
+    width: 55rem;
+    height: 20rem;
+    margin-top: 2rem;
+}
+
+.contact-me__card-icon {
+    position: absolute;
+    width: 8rem;
+    height: 8rem;
+    top: -45px;
+    left: 50%;
+    margin-left: -40px;
+    background-color: white;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease;
 }

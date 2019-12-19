@@ -356,12 +356,41 @@ const IndexPage = (props) => (
           <h1>CONTACT ME</h1>
         </div>
 
-        <div>
-          <p>This is the contact me section</p>
-        </div>
+        <div className="contact-me__form-container">
+          <div className="contact-me__card-icon">
+            <Img  alt="Code Icon"
+                  className="skill_icon_img"
+                  fluid={props.data.mail.childImageSharp.fluid} />
+          </div>
+          <form name="contact" method="POST" data-netlify="true">
 
+            <div className="contact-me__name-input-container">
+              <p>
+                <label><input type="text" name="name" placeholder="Name" className="form-input" /></label>   
+              </p>
+              <p>
+                <label><input type="email" name="email" placeholder="Email Address" className="form-input"/></label>
+              </p>
+            </div>
+
+            <p>
+              <label><textarea name="message" placeholder="Write A Message" className="contact-me__form-message"></textarea></label>
+            </p>
+            <p>
+              <button type="submit">Send</button>
+            </p>
+          </form>
+        </div>
       </div>
     </section>
+
+
+    <section className="section footer">
+      <div className="footer__container">
+        <p>Footer</p>
+      </div>
+    </section>
+
   </Layout>
 )
 
@@ -407,6 +436,9 @@ export const pageQuery = graphql`
       ...fluidImage
     } 
     about_me: file(relativePath: { eq: "hero.jpg" }) {
+      ...fluidImage
+    } 
+    mail: file(relativePath: { eq: "mail.png" }) {
       ...fluidImage
     } 
   }
