@@ -5,6 +5,10 @@
     background-position: bottom;
     position: relative;
     background-attachment: fixed;
+
+    &__copyright {
+        color: orange;
+    }
 }
 
 .contact-me__container {

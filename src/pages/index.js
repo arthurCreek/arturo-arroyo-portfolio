@@ -387,7 +387,27 @@ const IndexPage = (props) => (
 
     <section className="section footer">
       <div className="footer__container">
-        <p>Footer</p>
+        <div className="footer__social">
+          <div className="footer__social-icon-container">
+            <a href="https://www.linkedin.com/in/arthurcreek/">
+              <Img  alt="Code Icon"
+                  className="footer__social--icon"
+                  fluid={props.data.linkedin.childImageSharp.fluid} />
+            </a>
+          </div>
+
+          <div className="footer__social-icon-container">
+            <a href="https://github.com/arthurCreek">
+              <Img  alt="Code Icon"
+                    className="footer__social--icon"
+                    fluid={props.data.github.childImageSharp.fluid} />
+            </a>
+          </div>
+        </div>
+
+        <div className="footer__name">
+          <p>Arturo Arroyo <span className="contact-me__copyright">&copy;2015</span></p>
+        </div>
       </div>
     </section>
 
@@ -439,6 +459,12 @@ export const pageQuery = graphql`
       ...fluidImage
     } 
     mail: file(relativePath: { eq: "mail.png" }) {
+      ...fluidImage
+    } 
+    linkedin: file(relativePath: { eq: "linkedin.png" }) {
+      ...fluidImage
+    } 
+    github: file(relativePath: { eq: "github.png" }) {
       ...fluidImage
     } 
   }

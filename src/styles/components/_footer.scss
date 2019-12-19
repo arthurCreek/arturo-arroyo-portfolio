@@ -5,4 +5,35 @@
         background: black;
         color: white;
     }
+
+    &__social {
+        display: flex;
+        justify-content: center;
+        padding: 3rem 0 2rem;
+
+        &--icon {
+            width: 1rem;
+            padding: 1rem;
+            margin: 1rem;
+        }
+    }
+
+    &__name {
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+}
+
+.footer__social-icon-container {
+    background-color: white;
+    border-radius: 5px;
+    margin: 0 1rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color: orange;
+        transition: background-color 0.3s ease;
+    }
 }
