@@ -364,14 +364,13 @@ const IndexPage = (props) => (
           </div>
           <form name="contact" method="POST" data-netlify="true">
 
-            <div className="contact-me__name-input-container">
+
               <p>
                 <label><input type="text" name="name" placeholder="Name" className="form-input" /></label>   
               </p>
               <p>
                 <label><input type="email" name="email" placeholder="Email Address" className="form-input"/></label>
               </p>
-            </div>
 
             <p>
               <label><textarea name="message" placeholder="Write A Message" className="contact-me__form-message"></textarea></label>
