@@ -9,7 +9,11 @@ import '../styles/styles.scss'
 
 
 
+/******** 
 
+    Options for the particle js library to display elements
+
+********/
 const options = {
   "particles": {
     "number": {
@@ -121,8 +125,16 @@ const options = {
   "retina_detect": true
 }
 
+/******** 
+
+    Render this componenent (index page)
+
+********/
 const IndexPage = (props) => {
 
+    /******** 
+      Function for responsive navbar when 600px width and below
+    ********/
   function toggleShow() {
     document.querySelector('.navbar__list').classList.toggle('Navbar__ToggleShow');
     document.querySelector('.navbar__container').classList.toggle('Navbar__Container__ToggleShow');
@@ -133,7 +145,11 @@ const IndexPage = (props) => {
 
   return (
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Arturo Arroyo Portfolio" />
+
+      {/**************************
+        **** Hero section******
+      ***************************/}
       <div>
         <div className="header__text">
           <div className="header__text--container">
@@ -158,6 +174,9 @@ const IndexPage = (props) => {
         <Particles params={options} className="header__particles"/>
       </div>
 
+      {/**************************
+        **** Nav Bar ******
+      ***************************/}
       <div className="navbar">
         <div className="navbar__container">
           <div className="navbar__logo_and_menu">
@@ -181,6 +200,10 @@ const IndexPage = (props) => {
         </div>
       </div>
 
+
+      {/**************************
+        **** My Works Section ******
+      ***************************/}
       <section className="section my-works" id="section-my-works">
         <div className="my-works__container">
 
@@ -251,6 +274,9 @@ const IndexPage = (props) => {
 
 
 
+      {/**************************
+        **** My Skills Section ******
+      ***************************/}
       <section className="section my-skills" id="section-my-skills">
         <div className="my-skills__container">
 
@@ -363,6 +389,9 @@ const IndexPage = (props) => {
       </section>
 
 
+      {/**************************
+        **** About Me Section ******
+      ***************************/}
       <section className="section about-me" id="section-about-me">
         <div className="about-me__container">
 
@@ -389,6 +418,10 @@ const IndexPage = (props) => {
         </div>
       </section>
 
+
+      {/**************************
+        **** Contact Me Section ******
+      ***************************/}
       <section className="section contact-me" id="section-contact">
         <div className="contact-me__container">
 
@@ -426,6 +459,9 @@ const IndexPage = (props) => {
       </section>
 
 
+      {/**************************
+        **** Footer Section ******
+      ***************************/}
       <section className="section footer">
         <div className="footer__container">
           <div className="footer__social">
@@ -458,6 +494,9 @@ const IndexPage = (props) => {
 
 export default IndexPage
 
+/**************************
+**** Receive fluid images through graphql ******
+***************************/
 export const fluidImage = graphql`
 fragment fluidImage on File {
   childImageSharp {

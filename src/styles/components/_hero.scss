@@ -9,7 +9,7 @@
     background-attachment: fixed;
 
     @include respond(phone){
-        background-position: right;
+        background-position: center;
         background-attachment: initial;
     }
 
@@ -55,13 +55,6 @@
     top: 70%;
 }
 
-#hero__main-text {
-    
-    // @include respond(phone){
-    //     top: 50%;
-    // }
-}
-
 
 .header__particles{
     height: 100vh;
@@ -74,11 +67,6 @@
     @include respond(phone){
         background-position: right;
     }
-
-
-    // @include respond(tab-port){
-    //     height: 50vh;
-    // }
 }
 
 .header__text {
