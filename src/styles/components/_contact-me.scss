@@ -9,6 +9,9 @@
 
     @include respond(phone) {
         height: auto;
+        background-size: contain;
+        background-attachment: initial;
+        background-position: initial;
     }
 
     &__copyright {

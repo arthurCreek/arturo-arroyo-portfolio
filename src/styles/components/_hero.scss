@@ -10,6 +10,7 @@
 
     @include respond(phone){
         background-position: right;
+        background-attachment: initial;
     }
 
     &::before {
@@ -44,29 +45,10 @@
 
 .hero-sub {
     height: 70vh;
-
-    // @include respond(tab-land){
-    //     height: 50vh;
-    // }
-
-    // @include respond(tab-port){
-    //     height: 40vh;
-    // }
-    // @include respond(phone){
-    //     background-position: top;
-    // }
 }
 
 .hero-sub--contact {
     height: 60vh;
-
-    // @include respond(tab-land){
-    //     height: 45vh;
-    // }
-
-    // @include respond(tab-port){
-    //     height: 40vh;
-    // }
 }
 
 #hero__contact-text-box {
