@@ -139,6 +139,7 @@
     @include respond(phone) {
         margin-top: 5rem;
         margin-left: 12%;
+        width: 100%;
     }
 }
 

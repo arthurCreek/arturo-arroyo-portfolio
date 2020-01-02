@@ -3,7 +3,8 @@
     flex-direction: column;
     text-align: center;
     max-width: 130rem;
-    margin: 15rem auto;
+    margin: 0 auto;
+    padding: 15rem 0;
     position: relative;
 
     & > h1 {
@@ -24,6 +25,7 @@
 
     @include respond(phone) {
         margin: 7rem auto;
+        padding: 0;
     }
 }
 
@@ -34,7 +36,7 @@
     opacity: .1;
     font-weight: bolder;
     letter-spacing: 6px;
-    top: -35px;
+    top: 118px;
     width: 100%;
 
     @include respond(phone) {
