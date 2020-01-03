@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Img from 'gatsby-image'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -145,7 +145,7 @@ const IndexPage = (props) => {
 
   return (
     <Layout>
-      <SEO title="Arturo Arroyo Portfolio" />
+      <SEO title="Arturo Arroyo" />
 
       {/**************************
         **** Hero section******
@@ -220,7 +220,7 @@ const IndexPage = (props) => {
               </div>
               <div className="face face--2">
                 <div className="content">
-                  <p>Detail your car by the best in the business.</p>
+                  <p>Detail your car by the best in the business. Single Page Application using GatsbyJS.</p>
                   <p>Made With: GatsbyJS, HTML5, CSS3</p>
                   <a href="https://github.com/arthurCreek/gatsby-detailing">Github</a>
                   <a href="https://mystifying-goldwasser-a43885.netlify.com/">Live Demo</a>
@@ -240,8 +240,8 @@ const IndexPage = (props) => {
               </div>
               <div className="face face--2">
                 <div className="content">
-                  <p>Search Mars rover pictures by date through NASA's API.</p>
-                  <p>Made With: React, HTML5, CSS3, Javascript, NASA API, Context API, React Hooks</p>
+                  <p>Search Mars rover pictures by date through NASA's API using the Axios library.</p>
+                  <p>Made With: React, HTML5, CSS3, Javascript, Axios, NASA API, Context API, React Hooks</p>
                   <a href="https://github.com/arthurCreek/nasaapi">Github</a>
                   <a href="https://wizardly-yalow-390819.netlify.com/">Live Demo</a>
                 </div>
@@ -258,7 +258,7 @@ const IndexPage = (props) => {
               </div>
               <div className="face face--2">
                 <div className="content">
-                  <p>Top notch insulated outerwear ecommerce business.</p>
+                  <p>Top notch insulated outerwear ecommerce business.  Server Side Rendered application using NextJS.</p>
                   <p>Made With: NextJS, Node, ContextAPI, React Hooks</p>
                   <a href="https://github.com/arthurCreek/nexfit">Github</a>
                   <a href="https://nexfit.herokuapp.com/">Live Demo</a>

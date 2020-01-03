@@ -9,8 +9,9 @@
     background-attachment: fixed;
 
     @include respond(phone){
-        background-position: center;
         background-attachment: initial;
+        background-position: center;
+        
     }
 
     &::before {
