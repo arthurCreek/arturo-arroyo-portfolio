@@ -223,7 +223,7 @@ const IndexPage = (props) => {
                   <p>Detail your car by the best in the business. Single Page Application using GatsbyJS.</p>
                   <p>Made With: GatsbyJS, HTML5, CSS3</p>
                   <a href="https://github.com/arthurCreek/gatsby-detailing">Github</a>
-                  <a href="https://mystifying-goldwasser-a43885.netlify.com/">Live Demo</a>
+                  <a href="https://gatsbydetailing.netlify.com/">Live Demo</a>
                 </div>
               </div>
 
@@ -243,7 +243,7 @@ const IndexPage = (props) => {
                   <p>Search Mars rover pictures by date through NASA's API using the Axios library.</p>
                   <p>Made With: React, HTML5, CSS3, Javascript, Axios, NASA API, Context API, React Hooks</p>
                   <a href="https://github.com/arthurCreek/nasaapi">Github</a>
-                  <a href="https://wizardly-yalow-390819.netlify.com/">Live Demo</a>
+                  <a href="https://discovermars.netlify.com/">Live Demo</a>
                 </div>
               </div>
 
